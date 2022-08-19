@@ -1,0 +1,491 @@
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+main {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    border-style: none;
+}
+
+img[width="0"][height="0"] {
+    display: none;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+input,
+select,
+textarea,
+button {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+input {
+    overflow: visible;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+label {
+    margin: 0;
+}
+
+input,
+button,
+select {
+    border: none;
+    outline: none;
+}
+
+input {
+    border-radius: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body .mobile-visible {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    body .mobile-visible {
+        display: block;
+    }
+
+    body .desktop-visible {
+        display: none;
+    }
+}
+
+.no-scrolling {
+    overflow: hidden;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.invert-link {
+    text-decoration: none;
+}
+
+.invert-link:hover {
+    text-decoration: underline;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: #000;
+    font: normal 14px/16px 'DINPro', sans-serif;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 243px;
+    width: 100%;
+    margin: 5% auto 60px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 680px;
+    width: 100%;
+    height: 450px;
+    background: #F5F5F5;
+    border-radius: 5px;
+}
+
+form input {
+    background: #fff !important;
+}
+
+.auth-form label {
+    width: 70px;
+    margin-right: 20px;
+    font-weight: 500;
+    text-align: right;
+    color: #006FBA;
+}
+
+.auth-form input {
+    max-width: 250px;
+    width: 100%;
+}
+
+.auth-form .dx-texteditor.dx-editor-outlined {
+    border: none !important;
+    box-shadow: none !important;
+    margin-bottom: 20px;
+}
+
+.dx-button {
+    height: 40px;
+}
+
+.dx-button-has-text .dx-button-content {
+    padding: 8px 40px;
+}
+
+.dx-button-text {
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.auth-form .dx-button-text {
+    font-size: 18px;
+}
+
+.wrapper {
+    max-width: 1420px;
+    width: 100%;
+    margin: auto;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1420px;
+    width: 100%;
+    height: 50px;
+    margin: 4% auto 50px;
+}
+
+.menu-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background: #F5F5F5;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.menu-button {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 50px;
+    background: url(../img/i_home.png) center/33px no-repeat #F5F5F5;
+    border-radius: 5px 0px 0px 5px;
+    transition: all .2s linear;
+}
+
+.menu-button.active {
+    background: url(../img/i_home-active.png) center/35px no-repeat #E35205;
+}
+
+.menu-button:hover {
+    background: url(../img/i_home-active.png) center/35px no-repeat #009CDE;
+}
+
+.menu-link {
+    padding: 12px 45px;
+    background: #F5F5F5;
+    border-radius: 5px;
+    font-family: 'DINPro';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #006FBA;
+    transition: all .2s linear;
+}
+
+.menu-link:nth-child(2) {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    background: #009CDE;
+    color: #fff;
+}
+
+.menu-logout {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 50px;
+    background: url(../img/i_exit.png) center/35px no-repeat #009CDE;
+    border-radius: 5px;
+    transition: all .2s linear;
+}
+
+.menu-logout:hover {
+    background: url(../img/i_exit.png) center/35px no-repeat #E35205;
+}
+
+.menu-tabs {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.menu-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    width: 100%;
+    height: 50px;
+    background: #F5F5F5;
+    border-radius: 5px;
+    transition: all .2s linear;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #888B8D;
+}
+
+.menu-tab:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.menu-tab:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.menu-tab:hover,
+.menu-tab.active {
+    background: #D9D9D9;
+}
+
+.menu-reports {
+    max-width: 500px;
+    width: 100%;
+}
+
+.menu-reports-title {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #006FBA;
+}
+
+.menu-report-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background: #F5F5F5;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 22px;
+    color: #888B8D;
+}
+
+.menu-report-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #009CDE;
+    transition: all .3s linear;
+}
+
+.menu-report-link:hover::after {
+    width: 100%;
+}
