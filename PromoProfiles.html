@@ -6,8 +6,6 @@
     <title>Libra</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Theme -->
-    <link rel="dx-theme" data-theme="generic.light" href="css/dx.light.css" data-active="true" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
@@ -53,7 +51,7 @@
                 <a href="PromoProfiles.html" class="menu-link active">Участники акции</a>
                 <a href="" class="menu-link">Справка</a>
             </div>
-            <a href="index.html" class="menu-logout"></a>
+            <button class="menu-logout"></button>
         </div>
         
         <div class="custom-devexpress">
@@ -78,9 +76,6 @@
                     <div class="header">
                         <div class="content">
                             <div id="onlinedemo" class="button"></div>
-                            <div class="logo">
-                                <a class="logo" title="WidgetsJS Gallery" href="index.html"></a>
-                            </div>
                         </div>
                     </div>
                     <div class="content containerPlaceholder">
@@ -89,12 +84,32 @@
                                 <div class="long-title">
                                     <h3></h3>
                                 </div>
-                                <div id="region"></div>
-                                <div id="distr"></div>
-                                <div id="person"></div>
-                                <div id="promo"></div>
-                                <div id="periodFrom"></div>
-                                <div id="periodTo"></div>
+                                <div class="custom-select-table">
+                                    <div class="custom-select-wrapper">
+                                        <label>Регион</label>
+                                        <div id="region"></div>
+                                    </div>
+                                    <div class="custom-select-wrapper">
+                                        <label>Дистрибьютор</label>
+                                        <div id="distr"></div>
+                                    </div>
+                                    <div class="custom-select-wrapper">
+                                        <label>Сотрудник</label>
+                                        <div id="person"></div>
+                                    </div>
+                                    <div class="custom-select-wrapper">
+                                        <label>Акция</label>
+                                        <div id="promo"></div>
+                                    </div>
+                                    <div class="custom-select-wrapper">
+                                        <label>Этап с</label>
+                                        <div id="periodFrom"></div>
+                                    </div>
+                                    <div class="custom-select-wrapper">
+                                        <label>Этап по</label>
+                                        <div id="periodTo"></div>
+                                    </div>
+                                </div>
                                 <div id="full">
                                     <div id="gridDeleteSelected"></div>
                                     <div id="gridContainer"></div>
@@ -111,34 +126,55 @@
                     <form id="form">
                         <div class="popupFix" id="popupBigProfiles" style="position: absolute">
                             <div class="top-bg"></div>
-                            <div class="close" onclick="closePopupProfilesAdm();"></div>
-                            <div id="gridDetailsContainer"></div>
-                            <div id="docTypeBox"></div>
-                            <div id="dropzone-external" class="flex-box dx-theme-border-color">
-                                <img id="dropzone-image" src="#" hidden alt="" />
-                                <div id="dropzone-text" class="flex-box">
-                                    <span>Перетащите желаемый файл</span>
-                                    <span>…или нажмите, чтобы выбрать его</span>
+                            <div class="popupFix-container">
+                                <div class="close" onclick="closePopupProfilesAdm();"></div>
+                                <div class="popup-title">Данные участника</div>
+                                <div class="popupFix-wrapper">
+                                    <div class="popupFix-detail">
+                                        <div id="gridDetailsContainer"></div>
+                                    </div>
+                                    <div class="popupFix-docs-wrapper">
+                                        <div class="popupFix-docs-title">Загрузить сканы подтверждающих  документов</div>
+                                        <div id="docTypeBox"></div>
+                                        <div id="dropzone-external" class="flex-box dx-theme-border-color">
+                                            <img id="dropzone-image" src="#" hidden alt="" />
+                                            <div id="dropzone-text" class="flex-box">
+                                                <span>Перетащите желаемый файл</span>
+                                                <span>…или нажмите, чтобы выбрать его</span>
+                                            </div>
+                                            <div id="upload-progress"></div>
+                                        </div>
+                                        <div id="uploadDocFile"></div>
+                                    </div>
                                 </div>
-                                <div id="upload-progress"></div>
+                                <div id="buttonSendComment" class="button"></div>
+                                <div class="popupFix-photo-table">
+                                    <div id="gridPhotoContainer"></div>
+                                </div>
                             </div>
-                            <div id="uploadDocFile"></div>
-                            <div id="buttonSendComment" class="button"></div>
-                            <div id="gridPhotoContainer"></div>
                         </div>
                         <div class="popupComment">
-                            <div class="top-bg">
+                            <div class="top-bg"></div>
+                            <div class="popupComment-container">
+                                <div class="close" onclick="Memo.SetText('');"></div>
+                                <div class="popupComment-input-wrapper">
+                                    <!-- <label style="padding-left: 32%; font-size: large;" runat="server">
+                                    Укажите причину отправки:</label> -->
+                                    <div id="reasonBox"></div>
+                                </div>
+                                <div class="popupComment-input-wrapper">
+                                    <div class="popupComment-title">Добавить комментарий</div>
+                                    <div id="Memo"></div>
+                                </div>
+                                <div class="popupComment-input-wrapper">
+                                    <div id="submit" class="button"></div>
+                                </div>
+                                <div class="popupComment-history">
+                                    <div class="popupComment-title">История отправки уведомлений</div>
+                                    <div id="gridCommentsContainer"></div>
+                                </div>
                             </div>
-                            <div class="close" onclick="Memo.SetText('');">
-                            </div>
-                            <label style="padding-left: 32%; font-size: large;" runat="server">
-                                Укажите причину отправки:</label>
-                            <div id="reasonBox"></div>
-                            <div id="Memo"></div>
-                            <div id="submit" class="button"></div>
-                            <div id="gridCommentsContainer"></div>
-                            <div class="bottom-bg">
-                            </div>
+                            <div class="bottom-bg"></div>
                         </div>
                         <input asp-for="ParticipantID" id="ParticipantID" type="hidden" />
                         <input asp-for="PeriodID" id="PeriodID" type="hidden" />
@@ -148,6 +184,6 @@
         </div>
     </div>
 
-    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
