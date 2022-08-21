@@ -914,3 +914,64 @@ form input {
 .popupComment-history .dx-datagrid-headers {
     border-top: 1px solid #e0e0e0;
 }
+
+.dx-popup-normal {
+    max-width: 360px;
+    width: 100%;
+}
+
+.dx-popup-title.dx-toolbar {
+    padding: 0 24px;
+}
+
+.dx-popup-normal .dx-popup-content.dx-dialog-content {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #888B8D;
+}
+
+.dx-popup-normal .dx-popup-content.dx-dialog-content i {
+    font-style: normal;
+}
+
+.dx-popup-normal .dx-popup-bottom.dx-toolbar {
+    padding-bottom: 50px;
+}
+
+.dx-popup-bottom.dx-toolbar {
+    padding: 0 24px;
+}
+
+.dx-popup-bottom .dx-button {
+    height: 42px;
+    box-shadow: none;
+}
+
+.dx-popup-bottom .dx-button[aria-label="Да"] {
+    background: #E35205;
+    color: #fff;
+}
+
+.dx-popup-bottom .dx-button[aria-label="Да"]:hover {
+    background: #009CDE;
+}
+
+.dx-popup-bottom .dx-button[aria-label="Нет"] {
+    background: #D9D9D9;
+    color: #888B8D;
+}
+
+.dx-popup-bottom .dx-button[aria-label="Нет"]:hover {
+    background: #F5F5F5;
+}
+
+.dx-popup-bottom .dx-button .dx-button-text {
+    font-size: 18px;
+}
+
+.dx-popup-bottom.dx-toolbar .dx-toolbar-item, 
+.dx-rtl.dx-popup-bottom.dx-toolbar .dx-toolbar-menu-container {
+    padding-right: 40px;
+}
