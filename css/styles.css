@@ -601,14 +601,19 @@ form input {
 
 .custom-select-table {
     display: flex;
-    max-width: 1000px;
+    max-width: 1290px;
     width: 100%;
+    margin-bottom: 30px;
     border: 1px solid #e0e0e0;
 }
 
 .custom-select-wrapper {
     display: flex;
     flex-direction: column;
+}
+
+.custom-select-wrapper-210 {
+    min-width: 210px;
 }
 
 .custom-select-wrapper label {
