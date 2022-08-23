@@ -526,6 +526,25 @@ form input {
     margin-bottom: 40px;
 }
 
+.header .dx-button {
+    height: 50px;
+    background: #009CDE;
+}
+
+.header .dx-button:hover {
+    background: #006FBA;
+}
+
+.header .dx-button-has-text .dx-button-content {
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+}
+
+.header .dx-button-has-text .dx-button-text {
+    line-height: 1;
+}
+
 .custom-devexpress .dx-datagrid-rowsview .dx-master-detail-row:not(.dx-datagrid-edit-form) .dx-master-detail-cell {
     background: #fff;
 }
@@ -562,7 +581,7 @@ form input {
 
 .custom-devexpress .dx-texteditor.dx-editor-outlined {
     background-color: #F5F5F5;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #e0e0e0 !important;
     box-shadow: none;
 }
 
@@ -1014,4 +1033,31 @@ form input {
 
 .dx-loadpanel-content {
     border-radius: 5px;
+}
+
+.popupFix .dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label-before, 
+.popupFix .dx-editor-outlined.dx-texteditor-with-label .dx-texteditor-label .dx-label-before,
+.popupFix .dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label, 
+.popupFix .dx-editor-outlined.dx-texteditor-with-label .dx-texteditor-label .dx-label,
+.popupFix .dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label-after, 
+.popupFix .dx-editor-outlined.dx-texteditor-with-label .dx-texteditor-label .dx-label-after {
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.popupFix .dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label span, 
+.popupFix .dx-editor-outlined.dx-texteditor-with-label .dx-texteditor-label .dx-label span {
+    color: rgba(148,148,148,.87) !important;
+}
+
+.custom-devexpress .dx-row.dx-edit-row.dx-datagrid-edit-form .dx-form.dx-widget.dx-visibility-change-handler {
+    max-width: 1380px;
+}
+
+.custom-devexpress .dx-row.dx-edit-row.dx-datagrid-edit-form .dx-datagrid-form-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1380px;
+    float: none;
 }
