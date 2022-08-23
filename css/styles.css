@@ -321,6 +321,10 @@ form input {
     margin-bottom: 20px;
 }
 
+.auth-form .dx-texteditor-input.error-input {
+    border: 1px solid #E35205;
+}
+
 .dx-button {
     height: 40px;
     transition: all .2s linear;
@@ -345,6 +349,7 @@ form input {
 
 .auth-form .dx-button-text {
     font-size: 18px;
+    line-height: 1;
 }
 
 .wrapper {
@@ -405,7 +410,11 @@ form input {
     transition: all .2s linear;
 }
 
-.menu-link:nth-child(2) {
+.menu-link:not(:last-child) {
+    border-radius: 0;
+}
+
+.menu-link:last-child {
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -649,13 +658,13 @@ form input {
     min-height: 50px;
     margin-bottom: 50px;
     padding: 12px 45px;
-    background: #009CDE;
+    background: #F5F5F5;
     border-radius: 5px;
     font-family: 'DINPro';
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
-    color: #fff;
+    color: #009CDE;
 }
 
 .popupFix-container {
@@ -950,6 +959,7 @@ form input {
 }
 
 .dx-popup-bottom .dx-button[aria-label="Да"] {
+    margin-right: 40px;
     background: #E35205;
     color: #fff;
 }
@@ -971,7 +981,28 @@ form input {
     font-size: 18px;
 }
 
-.dx-popup-bottom.dx-toolbar .dx-toolbar-item, 
-.dx-rtl.dx-popup-bottom.dx-toolbar .dx-toolbar-menu-container {
-    padding-right: 40px;
+.page-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #888B8D;
+    margin-bottom: 30px;
+}
+
+.sales-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.dx-popup-wrapper > .dx-overlay-content {
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.selection-table .dx-data-row:hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) {  
+    background-color: rgb(0 156 222 / 10%) !important; 
+    cursor: pointer;  
 }
