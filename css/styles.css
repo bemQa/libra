@@ -1084,8 +1084,8 @@ form input {
 }
 
 .dx-loadpanel-content {
-    width: 90px;
-    height: 90px;
+    width: 90px !important;
+    height: 90px !important;
     border-radius: 5px;
     background: #009CDE;
 }
@@ -1110,6 +1110,11 @@ form input {
 }
 
 .dx-loadindicator-icon {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     background: url(../img/preloader.svg) center/contain no-repeat;
 }
 
