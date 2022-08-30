@@ -276,6 +276,10 @@ body {
     margin: 5% auto 60px;
 }
 
+.logo img {
+    margin-left: 45px;
+}
+
 .auth-form {
     position: relative;
     display: flex;
@@ -1120,6 +1124,18 @@ form input {
 
 .dx-loadindicator-icon .dx-loadindicator-segment {
     display: none;
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+    background-color: #F5F5F5;
+}
+
+.custom-devexpress .dx-editor-cell .dx-dropdowneditor {
+    background: #fff;
+}
+
+.dx-editor-cell .dx-texteditor .dx-texteditor-input {
+    background: #fff;
 }
 
 @media (max-width: 1420px) {
