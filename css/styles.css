@@ -18,9 +18,9 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 main {
@@ -315,7 +315,7 @@ form input {
     width: 100%;
 }
 
-.auth-form .dx-texteditor.dx-editor-outlined {
+.auth-form .dx-texteditor {
     border: none !important;
     box-shadow: none !important;
     margin-bottom: 20px;
@@ -579,13 +579,13 @@ form input {
     color: #888B8D;
 }
 
-.custom-devexpress .dx-texteditor.dx-editor-outlined {
+.custom-devexpress .dx-texteditor {
     background-color: #F5F5F5;
     border: 1px solid #e0e0e0 !important;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
-.custom-select-wrapper .dx-texteditor.dx-editor-outlined {
+.custom-select-wrapper .dx-texteditor {
     background: #fff;
     border-left: transparent;
     border-right: transparent;
@@ -599,23 +599,21 @@ form input {
 
 .custom-devexpress .dx-datagrid-form-buttons-container .dx-button {
     position: relative;
-    background: #F5F5F5;
-    border-color: transparent;
-}
-
-.custom-devexpress .dx-datagrid-form-buttons-container .dx-button::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
     background: #009CDE;
-    transition: all .3s linear;
+    border-color: transparent;
+    color: #fff;
 }
 
-.custom-devexpress .dx-datagrid-form-buttons-container .dx-button:hover::after {
-    width: 100%;
+.custom-devexpress .dx-datagrid-form-buttons-container .dx-button:hover {
+    background: #006FBA;
+}
+
+.custom-devexpress .dx-datagrid-form-buttons-container .dx-button[aria-label="Отмена"] {
+    background: #E35205;
+}
+
+.custom-devexpress .dx-datagrid-form-buttons-container .dx-button[aria-label="Отмена"]:hover {
+    background: #009CDE;
 }
 
 .custom-select-table {
@@ -746,8 +744,8 @@ form input {
     text-align: left !important;
 }
 
-.popupFix-detail .dx-texteditor.dx-editor-outlined input,
-.popupFix-docs-wrapper .dx-texteditor.dx-editor-outlined input {
+.popupFix-detail .dx-texteditor input,
+.popupFix-docs-wrapper .dx-texteditor input {
     background: #F5F5F5 !important;
 }
 
@@ -780,7 +778,7 @@ form input {
     margin-bottom: 30px;
 }
 
-.popupFix-docs-wrapper .dx-texteditor.dx-editor-outlined {
+.popupFix-docs-wrapper .dx-texteditor {
     width: 100% !important;
     margin-bottom: 50px;
 }
@@ -892,11 +890,11 @@ form input {
     margin: 0 auto 30px;
 }
 
-.popupComment .dx-texteditor.dx-editor-outlined input {
+.popupComment .dx-texteditor input {
     background: #F5F5F5 !important;
 }
 
-.popupComment .dx-texteditor.dx-editor-outlined.dx-textarea {
+.popupComment .dx-texteditor.dx-textarea {
     background-color: #fff !important;
     width: 100% !important;
 }
@@ -912,30 +910,19 @@ form input {
 .popupComment .dx-button {
     position: relative;
     height: 50px;
-    background: #F5F5F5;
+    background: #009CDE;
     border-color: transparent;
     box-shadow: none;
 }
 
-.popupComment .dx-button::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #009CDE;
-    transition: all .3s linear;
-}
-
-.popupComment .dx-button:hover::after {
-    width: 100%;
+.popupComment .dx-button:hover {
+    background: #006FBA;
 }
 
 .popupComment .dx-button-has-text .dx-button-content {
     font-weight: 500;
     font-size: 16px;
-    color: #888B8D;
+    color: #fff;
 }
 
 .popupComment-history {
@@ -1031,23 +1018,19 @@ form input {
     cursor: pointer;  
 }
 
-.dx-loadpanel-content {
-    border-radius: 5px;
-}
-
-.popupFix .dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label-before, 
-.popupFix .dx-editor-outlined.dx-texteditor-with-label .dx-texteditor-label .dx-label-before,
-.popupFix .dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label, 
-.popupFix .dx-editor-outlined.dx-texteditor-with-label .dx-texteditor-label .dx-label,
-.popupFix .dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label-after, 
-.popupFix .dx-editor-outlined.dx-texteditor-with-label .dx-texteditor-label .dx-label-after {
+.popupFix .dx-texteditor-with-floating-label .dx-texteditor-label .dx-label-before, 
+.popupFix .dx-texteditor-with-label .dx-texteditor-label .dx-label-before,
+.popupFix .dx-texteditor-with-floating-label .dx-texteditor-label .dx-label, 
+.popupFix .dx-texteditor-with-label .dx-texteditor-label .dx-label,
+.popupFix .dx-texteditor-with-floating-label .dx-texteditor-label .dx-label-after, 
+.popupFix .dx-texteditor-with-label .dx-texteditor-label .dx-label-after {
     padding: 0 !important;
     box-shadow: none !important;
     border-color: transparent !important;
 }
 
-.popupFix .dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label span, 
-.popupFix .dx-editor-outlined.dx-texteditor-with-label .dx-texteditor-label .dx-label span {
+.popupFix .dx-texteditor-with-floating-label .dx-texteditor-label .dx-label span, 
+.popupFix .dx-texteditor-with-label .dx-texteditor-label .dx-label span {
     color: rgba(148,148,148,.87) !important;
 }
 
@@ -1060,4 +1043,78 @@ form input {
     justify-content: flex-end;
     max-width: 1380px;
     float: none;
+}
+
+.custom-devexpress .dx-toolbar-button.dx-toolbar-text-auto-hide .dx-button .dx-button-content,
+.custom-devexpress .dx-button-has-icon .dx-button-content {
+    padding: 7px;
+}
+
+.dx-toolbar-button .dx-button .dx-icon.dx-icon-edit-button-addrow {
+    background: url(../img/i_plus.svg) center/18px no-repeat;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.dx-datagrid-addrow-button .dx-icon-edit-button-addrow::before {
+    display: none;
+}
+
+.custom-devexpress .dx-toolbar .dx-button .dx-icon.dx-icon-xlsxfile {
+    background: url(../img/i_excel.svg) center/24px no-repeat;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.dx-icon-xlsxfile::before {
+    display: none;
+}
+
+.dx-toolbar-button .dx-button .dx-icon.dx-icon-column-chooser {
+    background: url(../img/i_column.svg) center/27px no-repeat;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.dx-icon-column-chooser::before {
+    display: none;
+}
+
+.dx-loadpanel-content {
+    max-width: 90px;
+    border-radius: 5px;
+    background: #009CDE;
+}
+
+.dx-loadindicator {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.dx-loadindicator-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20px;
+    height: 25px;
+    background: url(../img/libra-mini.svg) center/contain no-repeat;
+}
+
+.dx-loadindicator-icon {
+    background: url(../img/preloader.svg) center/contain no-repeat;
+}
+
+.dx-loadindicator-icon .dx-loadindicator-segment {
+    display: none;
+}
+
+@media (max-width: 1420px) {
+    .adaptive {
+        min-width: auto;
+    }
 }
