@@ -260,6 +260,7 @@ body {
     padding: 0 20px;
     color: #000;
     font: normal 14px/16px 'DINPro', sans-serif;
+    -webkit-overflow-scrolling: touch;
 }
 
 .main-wrapper {
@@ -657,6 +658,7 @@ form input {
     display: none;
     overflow: auto;
     z-index: 100;
+    -webkit-overflow-scrolling: touch;
 }
 
 .close {
@@ -867,6 +869,7 @@ form input {
     display: none;
     overflow: auto;
     z-index: 101;
+    -webkit-overflow-scrolling: touch;
 }
 
 .popupComment-container {
@@ -1081,7 +1084,8 @@ form input {
 }
 
 .dx-loadpanel-content {
-    max-width: 90px;
+    width: 90px;
+    height: 90px;
     border-radius: 5px;
     background: #009CDE;
 }
@@ -1116,5 +1120,27 @@ form input {
 @media (max-width: 1420px) {
     .adaptive {
         min-width: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .custom-devexpress .popupFix {
+        padding: 20px 10px;
+    }
+
+    .popupFix-wrapper {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .popupFix-detail {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .popupComment-container {
+        max-width: 100%;
+        margin: auto;
+        padding: 80px 10px;
     }
 }
