@@ -1088,7 +1088,9 @@ form input {
 }
 
 .dx-loadpanel-content {
+    max-width: 90px !important;
     width: 90px !important;
+    max-height: 90px !important;
     height: 90px !important;
     border-radius: 5px;
     background: #009CDE;
@@ -1136,6 +1138,10 @@ form input {
 
 .dx-editor-cell .dx-texteditor .dx-texteditor-input {
     background: #fff;
+}
+
+.dx-texteditor::before {
+    display: none;
 }
 
 @media (max-width: 1420px) {
