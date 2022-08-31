@@ -8,29 +8,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js" defer></script>
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <![endif]-->
     <!--[if gte IE 9]><!-->
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js" defer></script>
     <!--<![endif]-->
     
-    <script src="js/data.js"></script>
+    <script src="js/data.js" defer></script>
 
-    <script src="js/site.js" asp-append-version="true"></script>
+    <script src="js/site.js" asp-append-version="true" defer></script>
 
-    <script src="js/knockout-3.4.0.js"></script>
-    <script src="js/globalize.min.js"></script>
-    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.2.5/js/dx.all.js"></script>
-    <script src="js/jszip.min.js"></script>
-    <script src="js/underscore-1.5.1.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="js/knockout-3.4.0.js" defer></script>
+    <script src="js/globalize.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.2.5/js/dx.all.js" defer></script>
+    <script src="js/jszip.min.js" defer></script>
+    <script src="js/underscore-1.5.1.min.js" defer></script>
+    <script src="js/js.js" defer></script>
     <!-- Dictionary files for Russian language -->
-    <script src="js/dx.messages.ru.js"></script>
+    <script src="js/dx.messages.ru.js" defer></script>
 
     <!--Themes-->
     <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.2.5/css/dx.common.css">
@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <script id="jsCode" src="js/pages/Stuff.js" asp-append-version="true"></script>
+    <script id="jsCode" src="js/pages/Stuff.js" asp-append-version="true" defer></script>
 
     <div class="wrapper">
         <div class="menu">
@@ -59,7 +59,9 @@
             <div class="container">
                 <main role="main" class="pb-3">
                     <script>
-                    DevExpress.localization.locale(navigator.language);
+                        document.addEventListener("DOMContentLoaded", () => {
+                            DevExpress.localization.locale(navigator.language);
+                        });
                     </script>
                     <div class="header">
                         <div class="content">

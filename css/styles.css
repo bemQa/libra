@@ -344,6 +344,9 @@ form input {
 }
 
 .dx-button-has-text .dx-button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 8px 30px;
 }
 
@@ -850,7 +853,8 @@ form input {
     font-size: 18px;
 }
 
-.dx-button.dx-button-has-icon.dx-datagrid-export-button {
+.dx-button.dx-button-has-icon.dx-datagrid-export-button,
+.dx-button.dx-button-has-icon.dx-button-has-text {
     -webkit-box-shadow: 0 1px 3px rgb(0 0 0 / 24%) !important;
     box-shadow: 0 1px 3px rgb(0 0 0 / 24%) !important;
 }
@@ -972,6 +976,9 @@ form input {
 }
 
 .dx-popup-bottom .dx-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 42px;
     box-shadow: none;
 }
@@ -997,6 +1004,7 @@ form input {
 
 .dx-popup-bottom .dx-button .dx-button-text {
     font-size: 18px;
+    line-height: 1;
 }
 
 .page-title {
@@ -1142,6 +1150,30 @@ form input {
 
 .dx-texteditor::before {
     display: none;
+}
+
+.popupFix .dx-texteditor-buttons-container {
+    background-color: #F5F5F5;
+}
+
+.dx-toolbar.dx-toolbar-compact .dx-button[aria-label="ОК"] {
+    min-width: 100px;
+    background: #009CDE;
+    color: #fff;
+}
+
+.dx-toolbar.dx-toolbar-compact .dx-button[aria-label="ОК"]:hover {
+    background: #006FBA;
+}
+
+.dx-toolbar.dx-toolbar-compact .dx-button[aria-label="Отменить"] {
+    min-width: 100px;
+    background: #E35205;
+    color: #fff;
+}
+
+.dx-toolbar.dx-toolbar-compact .dx-button[aria-label="Отменить"]:hover {
+    background: #009CDE;
 }
 
 @media (max-width: 1420px) {
