@@ -1176,6 +1176,12 @@ form input {
     background: #009CDE;
 }
 
+.dx-toolbar.dx-toolbar-compact .dx-button[aria-label="ОК"] .dx-button-content,
+.dx-toolbar.dx-toolbar-compact .dx-button[aria-label="Отменить"] .dx-button-content {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 @media (max-width: 1420px) {
     .adaptive {
         min-width: auto;
