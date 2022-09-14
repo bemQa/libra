@@ -1182,6 +1182,26 @@ form input {
     padding-right: 8px;
 }
 
+.fio {
+    max-width: 300px;
+    min-height: 50px;
+    padding: 12px 45px;
+    background: #F5F5F5;
+    border-radius: 5px;
+    font-family: 'DINPro';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #006FBA;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fio + .menu-logout {
+    border-radius: 0;
+}
+
 @media (max-width: 1420px) {
     .adaptive {
         min-width: auto;
