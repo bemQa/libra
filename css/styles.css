@@ -1202,6 +1202,11 @@ form input {
     border-radius: 0;
 }
 
+.dx-scrollable-scrollbar,
+.dx-scrollable-scroll{
+    height: 13px !important;
+}
+
 @media (max-width: 1420px) {
     .adaptive {
         min-width: auto;
