@@ -743,6 +743,7 @@ form input {
     font-size: 14px;
     line-height: 20px;
     color: #888B8D;
+    overflow: inherit;
 }
 
 .popupFix-detail .dx-datagrid-headers + .dx-datagrid-rowsview tr:first-child td:not(.dx-validation-pending):not(.dx-datagrid-select-all), 
