@@ -839,18 +839,22 @@ form input {
     align-items: center;
 }
 
-.popupFix #buttonSendComment {
+.popupFix #buttonSendComment,
+.popupFix .dx-button {
     height: 50px;
     background: #009CDE;
     color: #fff;
 }
 
 .popupFix #buttonSendComment:hover,
-.popupFix #buttonSendComment.dx-state-focused {
+.popupFix #buttonSendComment.dx-state-focused,
+.popupFix .dx-button:hover,
+.popupFix .dx-button.dx-state-focused {
     background: #006FBA;
 }
 
-.popupFix #buttonSendComment .dx-button-text {
+.popupFix #buttonSendComment .dx-button-text,
+.popupFix .dx-button .dx-button-text {
     font-size: 18px;
 }
 
@@ -1206,6 +1210,17 @@ form input {
 .dx-scrollable-scrollbar,
 .dx-scrollable-scroll{
     height: 13px !important;
+}
+
+.header .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1290px;
+    width: 100%;
+}
+
+.popupFix .custom-select-wrapper {
+    width: 100%;
 }
 
 @media (max-width: 1420px) {

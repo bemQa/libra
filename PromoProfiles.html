@@ -116,6 +116,14 @@
                                 <div class="header">
                                     <div class="content">
                                         <div id="onlinedemo" class="button"></div>
+                                        <!-- новая кнопка -->
+                                        <div id="test1" class="dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-text button" role="button" aria-label="Обновить данные" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Загрузить отправленные платежи</span><div class="dx-inkripple"></div></div></div>
+                                        <script>
+                                            document.getElementById('test1').addEventListener('click', function handleClick() {
+                                                document.getElementById('test2').style.display = 'block';
+                                            });
+                                        </script>
+                                        <!--  -->
                                     </div>
                                 </div>
                                 <div id="full">
@@ -188,6 +196,39 @@
                         </div>
                         <input asp-for="ParticipantID" id="ParticipantID" type="hidden" />
                         <input asp-for="PeriodID" id="PeriodID" type="hidden" />
+                        <!-- новый попап -->
+                        <div class="popupFix" id="test2" style="position: absolute">
+                            <div class="top-bg"></div>
+                            <div class="popupFix-container">
+                                <div class="close" onclick="closePopupProfilesAdm();"></div>
+                                <div class="popup-title">Выгрузить шаблон</div>
+                                <div class="page-title">Параметры для формирования отчета</div>
+                                <div class="custom-select-table">
+                                    <div class="custom-select-wrapper">
+                                        <!-- новый селект Акция -->
+                                        <label>Акция</label>
+                                        <div id="promo-test" class="dx-show-invalid-badge dx-selectbox dx-textbox dx-texteditor dx-dropdowneditor-button-visible dx-editor-filled dx-widget dx-dropdowneditor dx-dropdowneditor-field-clickable"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" value="79"><div class="dx-texteditor-container"><div class="dx-texteditor-input-container"><input autocomplete="off" class="dx-texteditor-input" aria-haspopup="listbox" aria-autocomplete="list" type="text" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false"><div data-dx_placeholder="Выбрать..." class="dx-placeholder dx-state-invisible"></div></div><div class="dx-texteditor-buttons-container"><div></div><div class="dx-widget dx-button-mode-contained dx-button-normal dx-dropdowneditor-button" aria-label="Выбрать" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div>
+                                        <!--  -->
+                                    </div>
+                                    <div class="custom-select-wrapper custom-select-wrapper-210">
+                                        <!-- новый селект Этап с -->
+                                        <label>Этап с</label>
+                                        <div id="periodFrom-test" class="dx-show-invalid-badge dx-selectbox dx-textbox dx-texteditor dx-dropdowneditor-button-visible dx-editor-filled dx-widget dx-dropdowneditor dx-dropdowneditor-field-clickable"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" value="1"><div class="dx-texteditor-container"><div class="dx-texteditor-input-container"><input autocomplete="off" class="dx-texteditor-input" aria-haspopup="listbox" aria-autocomplete="list" type="text" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false"><div data-dx_placeholder="Выбрать..." class="dx-placeholder dx-state-invisible"></div></div><div class="dx-texteditor-buttons-container"><div></div><div class="dx-widget dx-button-mode-contained dx-button-normal dx-dropdowneditor-button" aria-label="Выбрать" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div>
+                                        <!--  -->
+                                    </div>
+                                    <div class="custom-select-wrapper custom-select-wrapper-210">
+                                        <!-- новый селект Этап с -->
+                                        <label>Этап по</label>
+                                        <div id="periodTo-test" class="dx-show-invalid-badge dx-selectbox dx-textbox dx-texteditor dx-dropdowneditor-button-visible dx-editor-filled dx-widget dx-dropdowneditor dx-dropdowneditor-field-clickable"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" value="1"><div class="dx-texteditor-container"><div class="dx-texteditor-input-container"><input autocomplete="off" class="dx-texteditor-input" aria-haspopup="listbox" aria-autocomplete="list" type="text" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false"><div data-dx_placeholder="Выбрать..." class="dx-placeholder dx-state-invisible"></div></div><div class="dx-texteditor-buttons-container"><div></div><div class="dx-widget dx-button-mode-contained dx-button-normal dx-dropdowneditor-button" aria-label="Выбрать" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                <!-- новая кнопка -->
+                                <div id="test3" class="dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-text button" role="button" aria-label="Обновить данные" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Загрузить отправленные платежи</span><div class="dx-inkripple"></div></div></div>
+                                <!--  -->
+                            </div>
+                        </div>
+                        <!--  -->
                     </form>
                 </main>
             </div>
