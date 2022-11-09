@@ -1223,6 +1223,10 @@ form input {
     width: 100%;
 }
 
+.popup-header-button {
+    margin-bottom: 50px;
+}
+
 @media (max-width: 1420px) {
     .adaptive {
         min-width: auto;
