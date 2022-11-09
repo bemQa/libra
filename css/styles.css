@@ -1249,6 +1249,13 @@ form input {
     color: #E35205;
 }
 
+.dx-button.dx-fileuploader {
+    height: auto;
+    background: none !important;
+    box-shadow: none;
+    border: none;
+}
+
 @media (max-width: 1420px) {
     .adaptive {
         min-width: auto;
