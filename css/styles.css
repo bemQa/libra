@@ -1227,6 +1227,28 @@ form input {
     margin-bottom: 50px;
 }
 
+.notice-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.notice-result {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    color: #006FBA;
+    margin: 0 0 0 50px;
+    min-height: auto;
+}
+
+.notice-result.success {
+    color: #8bc34a;
+}
+
+.notice-result.error {
+    color: #E35205;
+}
+
 @media (max-width: 1420px) {
     .adaptive {
         min-width: auto;
