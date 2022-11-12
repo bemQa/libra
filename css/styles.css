@@ -1219,6 +1219,10 @@ form input {
     width: 100%;
 }
 
+.popupFix .custom-select-table {
+    max-width: 620px;
+}
+
 .popupFix .custom-select-wrapper {
     width: 100%;
 }
@@ -1229,15 +1233,16 @@ form input {
 
 .notice-wrapper {
     display: flex;
-    align-items: center;
 }
 
 .notice-result {
     font-weight: 500;
     font-size: 18px;
     line-height: 1;
+    text-align: left;
     color: #006FBA;
     margin: 0 0 0 50px;
+    padding-top: 1em;
     min-height: auto;
 }
 
@@ -1250,10 +1255,16 @@ form input {
 }
 
 .dx-button.dx-fileuploader {
+    max-width: 620px;
     height: auto;
     background: none !important;
     box-shadow: none;
     border: none;
+}
+
+.dx-button.dx-fileuploader .dx-fileuploader-cancel-button {
+    background: none;
+    border: 4px;
 }
 
 @media (max-width: 1420px) {
