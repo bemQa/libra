@@ -1227,6 +1227,10 @@ form input {
     width: 100%;
 }
 
+.popupFix .custom-select-wrapper .dx-texteditor-buttons-container {
+    background: none;
+}
+
 .popup-header-button {
     margin-bottom: 50px;
 }
