@@ -1233,6 +1233,7 @@ form input {
 
 .notice-wrapper {
     display: flex;
+    align-items: center;
 }
 
 .notice-result {
