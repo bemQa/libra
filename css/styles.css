@@ -840,7 +840,7 @@ form input {
 }
 
 .popupFix #buttonSendComment,
-.popupFix .dx-button {
+.popupFix2 .dx-button {
     height: 50px;
     background: #009CDE;
     color: #fff;
@@ -848,13 +848,13 @@ form input {
 
 .popupFix #buttonSendComment:hover,
 .popupFix #buttonSendComment.dx-state-focused,
-.popupFix .dx-button:hover,
-.popupFix .dx-button.dx-state-focused {
+.popupFix2 .dx-button:hover,
+.popupFix2 .dx-button.dx-state-focused {
     background: #006FBA;
 }
 
 .popupFix #buttonSendComment .dx-button-text,
-.popupFix .dx-button .dx-button-text {
+.popupFix2 .dx-button .dx-button-text {
     font-size: 18px;
 }
 
@@ -1219,15 +1219,15 @@ form input {
     width: 100%;
 }
 
-.popupFix .custom-select-table {
+.popupFix2 .custom-select-table {
     max-width: 620px;
 }
 
-.popupFix .custom-select-wrapper {
+.popupFix2 .custom-select-wrapper {
     width: 100%;
 }
 
-.popupFix .custom-select-wrapper .dx-texteditor-buttons-container {
+.popupFix2 .custom-select-wrapper .dx-texteditor-buttons-container {
     background: none;
 }
 
