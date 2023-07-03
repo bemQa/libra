@@ -956,6 +956,10 @@ form input {
     width: 100%;
 }
 
+.dx-datebox-wrapper-calendar .dx-popup-normal {
+    max-width: none;
+}
+
 .dx-popup-title.dx-toolbar {
     padding: 0 24px;
 }
